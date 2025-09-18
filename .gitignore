@@ -1,0 +1,36 @@
+Key.xcconfig
+**/Key.xcconfig
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+Info.plist
+**/Info.plist
+*.plist
+# Swift Package Manager
+# Ignore Swift Package Manager build artifacts and dependencies
+.build/
+Packages/
+Package.resolved
+.swiftpm
+# Carthage
+# Ignore Carthage dependencies
+Carthage/Build/
+
+# Fastlane
+# Ignore fastlane specific files
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Development
+# Ignore code injection tools and temporary files
+
+injectionforxcode/
+*.swp
+*.swo
+*.swap
+*~
