@@ -23,7 +23,7 @@ final class LocationManager: NSObject, CLLocationManagerDelegate{
     
     
     func startUpdatingLocation() {
-        manager.requestWhenInUseAuthorization( )
+        manager.requestWhenInUseAuthorization()
         isLoading = true
         manager.requestLocation()
     }
@@ -31,7 +31,7 @@ final class LocationManager: NSObject, CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first?.coordinate else { return }
         self.location = location
-        isLoading = true
+        isLoading = false
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

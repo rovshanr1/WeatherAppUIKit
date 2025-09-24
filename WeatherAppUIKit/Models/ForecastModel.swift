@@ -10,7 +10,7 @@ import Foundation
 struct ForecastModel: Codable{
     let cod: String
     let message, cnt: Int
-    let lits: [List]
+    let list: [List]
     let city: City
     
     
